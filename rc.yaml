@@ -10,9 +10,11 @@ spec:
     app: rc
   template: 
     metadata: 
+      name: rc-template
       labels:
         app: rc 
-    containers:
+    spec:
+      containers:
       - name: rc-container
         image: nginx:latest
         ports:
