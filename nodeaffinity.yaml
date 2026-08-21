@@ -7,13 +7,14 @@ metadata:
 spec:
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
-        nodeSelectorTerms:
-        - matchExpressions:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 1
+        preference:
+          matchExpressions:
           - key: type
             operator: In
             values:
-            - backend
+            - frontend
   containers:
   - name: nginx-cont 
     image: nginx:latest
