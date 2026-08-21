@@ -6,15 +6,15 @@ metadata:
     app: myapp
 spec:
   affinity:
-    nodeAffinity:
+    nodeAuthority: # or nodeAffinity
       preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 1
+      - weight: 80
         preference:
           matchExpressions:
           - key: type
             operator: In
             values:
-            - frontend
+            - backend
   containers:
   - name: nginx-cont 
     image: nginx:latest
