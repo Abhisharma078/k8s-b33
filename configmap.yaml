@@ -5,7 +5,7 @@ metadata:
   labels: 
     app: cm 
 data: 
-  mysql_root_password: "root"
-  MYSQL_USER: "admin"
-  MYSQL_PASSWORD: "admin"
-  MYSQL_DATABASE: "student_db"
+  mysql_root_password: root
+  MYSQL_USER: admin
+  MYSQL_PASSWORD: admin
+  MYSQL_DATABASE: student_db
