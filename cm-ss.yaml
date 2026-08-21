@@ -27,20 +27,3 @@ spec:
                 - name: my-config
                   key: mysql_root_password
 
-          - name: MYSQL_USER
-            valueFrom: 
-              configMapKeyRef: 
-                - name: my-config 
-                  key: MYSQL_USER
-          
-          - name: MYSQL_PASSWORD
-            valueFrom: 
-              configMapKeyRef: 
-                - name: my-config 
-                  key: MYSQL_PASSWORD
-
-          - name: MYSQL_DATABASE
-            valueFrom: 
-              configMapKeyRef: 
-                - name: my-config 
-                  key: MYSQL_DATABASE
